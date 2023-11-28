@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container {
+    width: 600px;
+    margin: 20px;
+}
+
+.btn-open {
+    background-color: rgba(8, 120, 225, 0.701);
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+}
+
+.paragraph {
+    display: inline-block;
+    border: 2px solid rgb(201, 197, 197);
+    padding: 15px;
+}
+
+.btn-copy-container {
+    display: flex;
+    justify-content: end;
+}
+
+
+.content-container {
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    overflow: hidden;
+    max-height: 1000px;
+    transition: max-height 0.3s cubic-bezier(1, 0, 1, 0);
+}
+
+.expansion-hide {
+    max-height: 0;
+    transition: max-height 0.3s cubic-bezier(0, 1, 0, 1);    
+}
